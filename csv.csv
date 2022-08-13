@@ -1,0 +1,19 @@
+import pandas as pd
+df= pd.read_cvs("teste.xls")
+teste_df ["media"]=(teste_df ["nota1"] + ["nota2"])/2
+teste.df.loc:["situação"]= 
+faltas= teste_df["faltas"]
+
+teste_df.loc[teste_df["media"] >= 7, "situação"] = "aprovado."  
+teste_df.loc[teste-df["media"] <7, "situação"] = "reprovado"
+teste_df.loc[teste_df["faltas"] >= 5, "situação"] = "reprovado."
+
+display(teste_df)
+
+#tabela de notas_alunos
+
+#aluno,nota1,nota2,faltas
+#aluno1,7,7,1
+#aluno2,3,10,7
+#aluno3,9,4,2
+#aluno4,10,6,9
