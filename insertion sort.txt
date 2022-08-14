@@ -1,0 +1,29 @@
+import random
+
+par = []
+impar = []
+
+vetor = list(range(1,31)) 
+random.shuffle(vetor)
+print(vetor)
+
+for num in vetor:
+    if num % 2 == 0:
+        par.append(num)
+    else:
+        impar.append(num)
+
+print("\n", impar)
+
+def sort(impar):
+    
+    for p in range(0, len(impar)):
+
+        while p > 0:
+            if impar[p - 1] > impar[p]:
+                impar[p], impar[p - 1] = impar[p - 1], impar[p]
+            p -= 1
+            #print(impar) 
+
+sort(impar)
+print(impar)
