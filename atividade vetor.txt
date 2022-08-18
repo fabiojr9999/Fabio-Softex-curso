@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <stdlib.h>	/* Para usar calloc() */
+
+main (void)
+
+{
+
+	int *p;
+	int a;
+	int i;
+
+... /* Determina o valor de t */
+
+	p=(int *)calloc(a,sizeof(int));		/* Aloca a números inteiros 
+						   p pode agora ser tratado como um vetor com
+						   t posicoes				*/
+	if (!p)
+        {
+        	printf ("** Erro: Memoria Insuficiente **");
+        	exit;
+        }
+
+	for (i=0; i<a ; i++)		/* p pode ser tratado como um vetor com t posicoes */
+		p[i] = i*i;
+	
+...
+
+	return 0;
+}
