@@ -1,0 +1,16 @@
+1 complexo complexo_novo(double real, double imag) {
+2 complexo c;
+3 c.real = real;
+4 c.imag = imag;
+5 return c;
+6 }
+7
+8 complexo complexo_soma(complexo a, complexo b) {
+9 return complexo_novo(a.real + b.real, a.imag + b.imag);
+10 }
+11
+12 complexo complexo_le() {
+13 complexo a;
+14 scanf("%lf %lf", &a.real, &a.imag);
+15 return a;
+16 }
