@@ -1,0 +1,10 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+        try {
+            System.out.println(1 / 0);
+        } catch (Exception excecao) {
+            System.out.println("Ocorreu o erro:" + excecao.getMessage());
+        }
+        System.out.println("Fim");
+    }
+}
