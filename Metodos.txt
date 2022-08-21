@@ -1,0 +1,39 @@
+Classe: Moto
+Modelo: Caractere
+Cor: Caractere
+Quantos Passageiros: Inteiro
+Métodos
+Ligar
+Acelerar
+Freiar
+Ligar Luz
+Desligar
+
+Classe: Barco
+Modelo: Caractere
+Cor: Caractere
+Métodos
+Ligar
+Acelerar
+Freiar
+Ligar Luz
+Desligar
+
+Classe: Banco
+Banco: Caractere
+Agencia Inteiro
+Número da Conta: Inteiro
+Métodos:
+Transferir valor
+Realizar Pix
+Efetuar Pagamento
+
+Classe: Pessoa
+Sexo: Caractere
+Idade: Inteiro
+Peso: Float
+
+Métodos
+Andar
+Dormir
+Correr
