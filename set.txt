@@ -1,0 +1,31 @@
+classe pessoa
+  privado nome: caracter
+
+  publico metodo getNome()
+    retorne nome
+  fimmetodo
+
+  publico metodo setNome()
+    (i:caracter)
+    nome = i
+  fimmetodo
+
+  publico metodo getIdade()
+    retorne idade
+  fimmetodo
+
+  metodo construtor()
+  privado idade: inteiro
+    publico metodo setIdade(inteiro novaIdade)
+      se(novaIdade >= 18):
+        escreva("Você já é maior de 18 Anos")
+      senao:
+        escreva("Você ainda é um adolescente/criança")
+      fimse
+  fimmetodo
+
+
+p1 = pessoa()
+p1.setNome("Brian")
+p1.setIdade(19)
+
