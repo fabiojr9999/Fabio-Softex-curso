@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>((Calculadora em JavaScript))</title>
+<script>
+ function Calculadora(){
+  var num1=document.getElementById("num1").value;
+  var oper=document.getElementById("oper").value;
+  var num2=document.getElementById("num2").value;
+  
+  if(oper == "somar"){
+   alert(parseInt(num1) + parseInt(num2));
+  }else
+  if(oper == "subtrair"){
+   alert(parseInt(num1) - parseInt(num2));
+  }else
+  if(oper == "multiplicar"){
+   alert(parseInt(num1) * parseInt(num2));
+  }else
+  if (oper == "dividir"){
+   alert(parseInt(num1) / parseInt(num2));
+  }
+ }
+</script>
+</head>
+<body>
+<h1> Calculadora </h1>
+<input type="text" id ="num1"/> <br/>
+  
+  <select name="oper" id="oper">
+   <option value="somar">Somar</option>
+   <option value="subtrair">Subtrair</option>
+   <option value="multiplicar">Multiplicar</option>
+   <option value="dividir">Dividir</option>
+  </select><br/>
+  
+<input type="text" id="num2"/>
+<input type="submit" onClick="Calculadora()" value="Calcular"/>
+
+</body>
+</html>
